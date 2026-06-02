@@ -23,7 +23,7 @@ OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 FINDINGS_FILE    = OUTPUT_DIR / "findings_USP001.json"
-BATCH_RECORD_CSV = BASE_DIR   / "batch_record_USP_001.csv"
+BATCH_RECORD_CSV = BASE_DIR / "data" / "batch_record_USP_001.csv"
 HTML_REPORT      = OUTPUT_DIR / "ALCOA_Review_Report_USP001.html"
 
 

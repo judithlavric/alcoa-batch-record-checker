@@ -18,13 +18,12 @@ from datetime import datetime
 # Configuration
 # ---------------------------------------------------------------------------
 BASE_DIR = Path(__file__).parent
-DATA_DIR = BASE_DIR
 OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-BATCH_RECORD_FILE = DATA_DIR / "batch_record_USP_001.csv"
-SPECS_FILE = DATA_DIR / "usp_001_specs.json"
-FINDINGS_OUTPUT = OUTPUT_DIR / "findings_USP001.json"
+BATCH_RECORD_FILE = BASE_DIR / "data"  / "batch_record_USP_001.csv"
+SPECS_FILE        = BASE_DIR / "specs" / "usp_001_specs.json"
+FINDINGS_OUTPUT   = OUTPUT_DIR / "findings_USP001.json"
 
 
 # ---------------------------------------------------------------------------
