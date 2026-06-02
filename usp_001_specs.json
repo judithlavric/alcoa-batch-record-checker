@@ -1,0 +1,79 @@
+{
+  "batch_id": "USP-001",
+  "product_name": "Phosphate Buffered Saline (PBS) 1X, pH 7.4",
+  "product_code": "PBS-1X-0001",
+  "batch_size": "200 L",
+  "manufacturing_site": "Werthenstein BioPharma AG, Schachen, Switzerland",
+  "manufacturing_suite": "Suite USP-A",
+  "production_window": {
+    "start": "2024-03-15 06:00:00",
+    "end": "2024-03-15 14:00:00",
+    "timezone": "CET"
+  },
+  "document_revision": "REV-04",
+  "protocol_reference": "PRO-USP-2024-001",
+  "clinical_phase": "Phase II",
+  "sponsor": "MSD International GmbH",
+  "authorized_operators": ["OP-204", "OP-211", "OP-198", "OP-217", "OP-233"],
+  "valid_sop_references": [
+    "SOP-MFG-0099",
+    "SOP-MFG-0112",
+    "SOP-MFG-0115",
+    "SOP-MFG-0118",
+    "SOP-MFG-0119",
+    "SOP-MFG-0121",
+    "SOP-MFG-0130",
+    "SOP-MFG-0145",
+    "SOP-MFG-0150",
+    "SOP-QC-0044",
+    "SOP-QC-0088"
+  ],
+  "valid_bom_references": [
+    "BOM-USP-001-REV3",
+    "N/A"
+  ],
+  "required_fields": [
+    "step_id",
+    "step_name",
+    "performed_by",
+    "checked_by",
+    "timestamp",
+    "actual_value",
+    "pass_fail"
+  ],
+  "step_specifications": {
+    "USP-004": {"parameter": "WFI Volume", "min": 158.0, "max": 162.0, "unit": "L"},
+    "USP-005": {"parameter": "NaCl Mass", "min": 1755.0, "max": 1761.0, "unit": "g"},
+    "USP-006": {"parameter": "KH2PO4 Mass", "min": 270.0, "max": 274.0, "unit": "g"},
+    "USP-007": {"parameter": "Na2HPO4 Mass", "min": 2835.0, "max": 2845.0, "unit": "g"},
+    "USP-008": {"parameter": "Mixing Speed", "min": 55, "max": 65, "unit": "RPM"},
+    "USP-009": {"parameter": "Intermediate Volume", "min": 188.0, "max": 192.0, "unit": "L"},
+    "USP-010": {"parameter": "pH Pre-Adjustment", "min": 7.35, "max": 7.45, "unit": "pH"},
+    "USP-012": {"parameter": "pH Post-Adjustment", "min": 7.35, "max": 7.45, "unit": "pH"},
+    "USP-014": {"parameter": "pH Final", "min": 7.35, "max": 7.45, "unit": "pH"},
+    "USP-015": {"parameter": "Conductivity", "min": 9.0, "max": 10.0, "unit": "mS/cm"},
+    "USP-016": {"parameter": "Final Volume", "min": 198.0, "max": 202.0, "unit": "L"},
+    "USP-018": {"parameter": "Filter Bubble Point Pre-Use", "min": 35.0, "max": 999.0, "unit": "psi"},
+    "USP-019": {"parameter": "Filtration Volume", "min": 198.0, "max": 202.0, "unit": "L"},
+    "USP-020": {"parameter": "Filter Bubble Point Post-Use", "min": 35.0, "max": 999.0, "unit": "psi"},
+    "USP-021": {"parameter": "Filtered Volume Yield", "min": 189.0, "max": 202.0, "unit": "L"},
+    "USP-022": {"parameter": "pH Post-Filtration", "min": 7.35, "max": 7.45, "unit": "pH"},
+    "USP-023": {"parameter": "Storage Temperature", "min": 2.0, "max": 8.0, "unit": "°C"}
+  },
+  "volume_consistency_checks": [
+    {
+      "check_id": "VOL-CHK-01",
+      "description": "Filtered volume (USP-021) must be within 5% of pre-filtration volume (USP-016)",
+      "step_a": "USP-016",
+      "step_b": "USP-021",
+      "tolerance_pct": 5.0
+    }
+  ],
+  "alcoa_plus_principles": [
+    "Attributable", "Legible", "Contemporaneous", "Original",
+    "Accurate", "Complete", "Consistent", "Enduring", "Available"
+  ],
+  "reviewer": "Judith Lavric",
+  "reviewer_title": "GMP Documentation Specialist",
+  "review_date": "2024-03-18"
+}

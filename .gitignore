@@ -1,0 +1,10 @@
+# Generated report output (too large / build artifact)
+output/*.html
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store

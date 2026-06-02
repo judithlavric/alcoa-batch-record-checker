@@ -1,0 +1,185 @@
+{
+  "batch_id": "USP-001",
+  "product_name": "Phosphate Buffered Saline (PBS) 1X, pH 7.4",
+  "manufacturing_site": "Werthenstein BioPharma AG, Schachen, Switzerland",
+  "reviewer": "Judith Lavric",
+  "review_date": "2024-03-18",
+  "overall_result": "FAIL",
+  "total_steps": 25,
+  "total_findings": 15,
+  "critical_count": 8,
+  "major_count": 7,
+  "minor_count": 0,
+  "principle_summary": {
+    "Attributable": {
+      "status": "FAIL",
+      "critical": 1,
+      "major": 2,
+      "minor": 0,
+      "total": 3
+    },
+    "Legible": {
+      "status": "WARN",
+      "critical": 0,
+      "major": 1,
+      "minor": 0,
+      "total": 1
+    },
+    "Contemporaneous": {
+      "status": "FAIL",
+      "critical": 1,
+      "major": 0,
+      "minor": 0,
+      "total": 1
+    },
+    "Original": {
+      "status": "PASS",
+      "critical": 0,
+      "major": 0,
+      "minor": 0,
+      "total": 0
+    },
+    "Accurate": {
+      "status": "FAIL",
+      "critical": 5,
+      "major": 0,
+      "minor": 0,
+      "total": 5
+    },
+    "Complete": {
+      "status": "WARN",
+      "critical": 0,
+      "major": 4,
+      "minor": 0,
+      "total": 4
+    },
+    "Consistent": {
+      "status": "FAIL",
+      "critical": 1,
+      "major": 0,
+      "minor": 0,
+      "total": 1
+    },
+    "Enduring": {
+      "status": "PASS",
+      "critical": 0,
+      "major": 0,
+      "minor": 0,
+      "total": 0
+    },
+    "Available": {
+      "status": "PASS",
+      "critical": 0,
+      "major": 0,
+      "minor": 0,
+      "total": 0
+    }
+  },
+  "findings": [
+    {
+      "step_id": "USP-006",
+      "principle": "Attributable",
+      "severity": "MAJOR",
+      "observation": "Step USP-006 (Potassium Phosphate Monobasic (KH2PO4) Addition): 'checked_by' field is blank. Second-person verification signature is absent. All manufacturing entries require independent review and countersignature per GDP requirements.",
+      "regulatory_reference": "EU GMP Annex 11 §12; 21 CFR Part 11.10(d); ICH Q7 §6.41"
+    },
+    {
+      "step_id": "USP-010",
+      "principle": "Attributable",
+      "severity": "CRITICAL",
+      "observation": "Step USP-010 (pH Measurement - Pre-Adjustment): Operator ID 'OP-999' is not listed in the approved operator register for this batch. Entry cannot be attributed to a qualified, trained individual. Traceability to a specific person is a fundamental GDP requirement.",
+      "regulatory_reference": "EU GMP Annex 11 §12; 21 CFR Part 11.10(d); ICH Q7 §6.41"
+    },
+    {
+      "step_id": "USP-017",
+      "principle": "Attributable",
+      "severity": "MAJOR",
+      "observation": "Step USP-017 (Bioburden Sampling - Pre-Filtration): 'checked_by' field is blank. Second-person verification signature is absent. All manufacturing entries require independent review and countersignature per GDP requirements.",
+      "regulatory_reference": "EU GMP Annex 11 §12; 21 CFR Part 11.10(d); ICH Q7 §6.41"
+    },
+    {
+      "step_id": "USP-017",
+      "principle": "Legible",
+      "severity": "MAJOR",
+      "observation": "Step USP-017 (Bioburden Sampling - Pre-Filtration): 'actual_value' contains placeholder token 'PENDING'. Incomplete or deferred entries in an executed batch record are not compliant with GDP legibility requirements. Results must be recorded at time of execution, not populated retrospectively.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.8; WHO TRS 986 Annex 2 §15.3"
+    },
+    {
+      "step_id": "USP-023",
+      "principle": "Contemporaneous",
+      "severity": "CRITICAL",
+      "observation": "Step USP-023 (Temperature Verification - Storage Conditions): Timestamp 2024-03-17 14:22:00 falls outside the approved production window (2024-03-15 06:00:00 – 2024-03-15 14:00:00). Entries recorded outside the production window are indicative of backdating or late data entry, which represents a significant data integrity risk.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.8; 21 CFR 211.68; ISPE GAMP5 §7.4"
+    },
+    {
+      "step_id": "USP-010",
+      "principle": "Accurate",
+      "severity": "CRITICAL",
+      "observation": "Step USP-010 (pH Measurement - Pre-Adjustment): Recorded pH Pre-Adjustment of 7.21 pH is outside the approved specification range [7.35–7.45 pH]. Out-of-specification results must be investigated under the site's OOS procedure before batch disposition.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.9; ICH Q7 §6.50; 21 CFR 211.192"
+    },
+    {
+      "step_id": "USP-012",
+      "principle": "Accurate",
+      "severity": "CRITICAL",
+      "observation": "Step USP-012 (pH Measurement - Post-Adjustment): Recorded pH Post-Adjustment of 7.52 pH is outside the approved specification range [7.35–7.45 pH]. Out-of-specification results must be investigated under the site's OOS procedure before batch disposition.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.9; ICH Q7 §6.50; 21 CFR 211.192"
+    },
+    {
+      "step_id": "USP-018",
+      "principle": "Accurate",
+      "severity": "CRITICAL",
+      "observation": "Step USP-018 (0.22µm Filter Integrity Test - Pre-Use): Recorded Filter Bubble Point Pre-Use of 34.8 psi is outside the approved specification range [35.0–999.0 psi]. Out-of-specification results must be investigated under the site's OOS procedure before batch disposition.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.9; ICH Q7 §6.50; 21 CFR 211.192"
+    },
+    {
+      "step_id": "USP-020",
+      "principle": "Accurate",
+      "severity": "CRITICAL",
+      "observation": "Step USP-020 (0.22µm Filter Integrity Test - Post-Use): Recorded Filter Bubble Point Post-Use of 33.1 psi is outside the approved specification range [35.0–999.0 psi]. Out-of-specification results must be investigated under the site's OOS procedure before batch disposition.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.9; ICH Q7 §6.50; 21 CFR 211.192"
+    },
+    {
+      "step_id": "USP-021",
+      "principle": "Accurate",
+      "severity": "CRITICAL",
+      "observation": "Step USP-021 (Filtered Volume Verification): Recorded Filtered Volume Yield of 174.2 L is outside the approved specification range [189.0–202.0 L]. Out-of-specification results must be investigated under the site's OOS procedure before batch disposition.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.9; ICH Q7 §6.50; 21 CFR 211.192"
+    },
+    {
+      "step_id": "USP-006",
+      "principle": "Complete",
+      "severity": "MAJOR",
+      "observation": "Step USP-006 (Potassium Phosphate Monobasic (KH2PO4) Addition): Required field 'checked_by' is empty. All mandatory fields must be completed at the time of execution. Incomplete batch records are not acceptable for clinical manufacturing and may prevent batch release.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.8; WHO TRS 957 Annex 4 §15.2; 21 CFR 211.188"
+    },
+    {
+      "step_id": "USP-011",
+      "principle": "Complete",
+      "severity": "MAJOR",
+      "observation": "Step USP-011 (1N NaOH Addition - pH Adjustment): Required field 'pass_fail' is empty. All mandatory fields must be completed at the time of execution. Incomplete batch records are not acceptable for clinical manufacturing and may prevent batch release.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.8; WHO TRS 957 Annex 4 §15.2; 21 CFR 211.188"
+    },
+    {
+      "step_id": "USP-013",
+      "principle": "Complete",
+      "severity": "MAJOR",
+      "observation": "Step USP-013 (1N HCl Addition - pH Re-adjustment): Required field 'pass_fail' is empty. All mandatory fields must be completed at the time of execution. Incomplete batch records are not acceptable for clinical manufacturing and may prevent batch release.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.8; WHO TRS 957 Annex 4 §15.2; 21 CFR 211.188"
+    },
+    {
+      "step_id": "USP-017",
+      "principle": "Complete",
+      "severity": "MAJOR",
+      "observation": "Step USP-017 (Bioburden Sampling - Pre-Filtration): Required field 'checked_by' is empty. All mandatory fields must be completed at the time of execution. Incomplete batch records are not acceptable for clinical manufacturing and may prevent batch release.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.8; WHO TRS 957 Annex 4 §15.2; 21 CFR 211.188"
+    },
+    {
+      "step_id": "USP-016/USP-021",
+      "principle": "Consistent",
+      "severity": "CRITICAL",
+      "observation": "Volume consistency check VOL-CHK-01 FAILED: USP-016 recorded 199.8 L (pre-filtration) vs USP-021 recorded 174.2 L (post-filtration). Discrepancy of 12.8% exceeds the 5.0% tolerance. Unexplained yield loss of this magnitude requires immediate investigation. Potential causes include sampling error, unrecorded transfers, or data entry error.",
+      "regulatory_reference": "EU GMP Chapter 4 §4.8; ICH Q10 §1.6; 21 CFR 211.192"
+    }
+  ]
+}
